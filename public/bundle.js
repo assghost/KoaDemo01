@@ -21378,12 +21378,12 @@ var Counter = function (_Component) {
     }, {
         key: 'componentDidMount',
         value: function componentDidMount() {
-            console.log('******DidMount****', this.props);
+            //console.log('******DidMount****',this.props)
         }
     }, {
         key: 'render',
         value: function render() {
-            console.log('******render****', this.props);
+            //console.log('******render****',this.props)
             var value = this.props.value;
 
 

@@ -13,11 +13,11 @@ class Counter extends Component {
     }
 
     componentDidMount(){
-        console.log('******DidMount****',this.props)
+        //console.log('******DidMount****',this.props)
     }
 
     render() {
-        console.log('******render****',this.props)
+        //console.log('******render****',this.props)
         const {value} = this.props
 
         return (
