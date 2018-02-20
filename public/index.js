@@ -3,9 +3,15 @@
  */
 import ReactDom from 'react-dom'
 import React from 'react'
-import Counter from './javascripts/components/Counter'
+import { Provider } from 'react-redux'
+import configureStore from './javascripts/store/configureStore'
+import Counter from './javascripts/containers/counter'
+
+const store = configureStore()
 
 ReactDom.render(
-    <Counter/>,
+    <Provider store={store}>
+        <Counter/>
+    </Provider>,
     document.getElementById('root')
 )

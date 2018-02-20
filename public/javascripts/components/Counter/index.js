@@ -13,13 +13,16 @@ class Counter extends Component {
     }
 
     componentDidMount(){
-
+        console.log('******DidMount****',this.props)
     }
 
     render() {
+        console.log('******render****',this.props)
+        const {value} = this.props
+
         return (
             <div>
-                <h3>React</h3>
+                <h2>React Counter: {value}</h2>
             </div>
         )
     }
