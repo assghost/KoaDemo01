@@ -2,6 +2,7 @@
  * Created by Administrator on 2018/2/20.
  */
 import React, {Component,PropTypes} from 'react'
+import '../../../stylesheets/style.css'
 
 class Counter extends Component {
     constructor(props){
@@ -18,11 +19,11 @@ class Counter extends Component {
 
     render() {
         //console.log('******render****',this.props)
-        const {value} = this.props
+        const {value,increment} = this.props
 
         return (
             <div>
-                <h2>React Counter: {value}</h2>
+                <h1><span className="btn" onClick={increment}>React Counter: {value}</span></h1>
             </div>
         )
     }

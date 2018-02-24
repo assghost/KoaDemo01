@@ -7,7 +7,7 @@ export default function (state = {count: 0}, action) {
 
     const count = state.count
 
-    switch (action.Type) {
+    switch (action.type) {
         case INCREMENT:
             return {count: count + 1}
         default:

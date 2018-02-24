@@ -3,6 +3,9 @@
 /**
  * Module dependencies.
  */
+require('babel-polyfill')
+require('babel-core')
+
 
 var app = require('../app');
 var debug = require('debug')('demo:server');
